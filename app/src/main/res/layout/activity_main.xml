@@ -8,6 +8,7 @@
     tools:context="com.wxc.mediaplayer.activity.MainActivity">
 
     <FrameLayout
+        android:id="@+id/fl_main_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
@@ -18,15 +19,34 @@
         android:id="@+id/rg_bottom_tag"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_gravity="center_vertical"
+        android:background="#11000000"
+        android:orientation="horizontal"
+        android:padding="3dp">
 
         <RadioButton
             android:id="@+id/rb_video"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/botttom_tag_style"
             android:drawableTop="@drawable/rb_video_drawable_selector"
-            android:layout_weight="1"
+            android:text="本地视频" />
+
+        <RadioButton
+            android:id="@+id/rb_audio"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_audio_drawable_selector"
             android:text="本地音频" />
+
+        <RadioButton
+            android:id="@+id/rb_net_video"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_net_video_drawable_selector"
+            android:text="本地视频" />
+
+        <RadioButton
+            android:id="@+id/rb_netaudio"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/rb_netaudio_drawable_selector"
+            android:text="本地视频" />
 
     </RadioGroup>
 </LinearLayout>
