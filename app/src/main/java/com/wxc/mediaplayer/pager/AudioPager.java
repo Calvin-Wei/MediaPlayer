@@ -3,6 +3,7 @@ package com.wxc.mediaplayer.pager;
 import android.content.Context;
 import android.view.View;
 
+import com.wxc.mediaplayer.R;
 import com.wxc.mediaplayer.base.BasePager;
 
 /**
